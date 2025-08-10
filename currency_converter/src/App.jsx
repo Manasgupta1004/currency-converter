@@ -80,6 +80,7 @@ function App() {
           <i className='fa-solid fa-arrow-right-arrow-left'></i>
           <div className="to">
             <p>To</p>
+             <div className="select-container">
             <img src={toflag} alt="to flag" />
             <select name="to" value={tocurrency} onChange={(e) => {
               settocurrency(e.target.value)
@@ -90,6 +91,7 @@ function App() {
                 </option>
               ))}
             </select>
+            </div>
           </div>
         </div>
         <div className="msg">{msg}</div>
